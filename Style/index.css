@@ -159,8 +159,8 @@ h1, p {
 }
 
 .form-check-input:checked + .form-check-label:before {
-  background-color: #ffcf98;
-  border-color: #ffcf98;
+  background-color: #ff9a27;
+  border-color: #f7dcbe;
 }
 
 .form-check-input[type="checkbox"]:checked + .form-check-label:after {
@@ -210,7 +210,7 @@ h1, p {
 }
 
 .form-button-primary:hover {
-  background-color: #ffc180;
+  background-color: #ffa442;
 }
 
 /* Button Group */
@@ -273,7 +273,7 @@ p a {
   transition: color 0.2s;
 }
 p a:hover {
-  color: #ffc180;
+  color: #f57e00;
 }
 /* Browser Compatibility Notes */
 /* 
