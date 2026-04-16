@@ -11,51 +11,61 @@
 <body>
   <main>
     <h1>Cadastro de Desenvolvedor</h1>
-    <form>
-      <div>
-        <label class="block" for="nome">Nome Completo</label>
-        <input id="nome" name="nome" type="text" placeholder="João Maria José">
+    <form class="form-container">
+      <div class="form-group">
+        <label class="form-label" for="nome">Nome Completo</label>
+        <input class="form-input" id="nome" name="nome" type="text" placeholder="João Maria José" required>
       </div>
-      <div>
-        <label class="block" for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com">
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
       </div>
-      <div>
-        <label class="block" for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+      <div class="form-group">
+        <label class="form-label" for="senha">Senha</label>
+        <input class="form-input" type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
       </div>
-      <div>
+      <div class="form-group">
         <legend>Gênero</legend>
-        <select name="genero" id="genero">
-          <option >Selecione...</option>
+        <select class="form-select" name="genero" id="genero">
+          <option>Selecione...</option>
           <option value="m">Masculino</option>
           <option value="f">Feminino</option>
           <option value="nb">Outros</option>
         </select>
       </div>
-      <div>
-        <label class="block" for="nasc">Data de Nascimento</label>
-        <input type="date" name="datNasc" id="nasc">
+      <div class="form-group">
+        <label class="form-label" for="nasc">Data de Nascimento</label>
+        <input class="form-input" type="date" name="datNasc" id="nasc">
       </div>
-      <div>
-        <legend>Stacks:</legend>
-        <input type="checkbox" name="html" id="html">
-        <label for="html">HTML</label>
-        <input type="checkbox" name="css" id="css">
-        <label for="css">CSS</label>
-        <input type="checkbox" name="javascript" id="javascript">
-        <label for="javascript">JavaScript</label>
+      <div class="form-group">
+        <span class="form-label">Stacks:</span>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="html" id="html">
+          <label class="form-check-label" for="html">HTML</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="css" id="css">
+          <label class="form-check-label" for="css">CSS</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="javascript" id="javascript">
+          <label class="form-check-label" for="javascript">JavaScript</label>
+        </div>
       </div>
-      <div>
-        <Legend>Possui Experiência?</Legend>
-        <input type="radio" name="experiencia" id="sim">
-        <label for="sim">Sim</label>
-        <input type="radio" name="experiencia" id="não">
-        <label for="não">Não</label>
-        <legend>Se sim, descreva:</legend>
-        <textarea name="descXp" id="descXp" cols="30" rows="8"></textarea>
+      <div class="form-group">
+        <span class="form-label">Possui Experiência?</span>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="experiencia" id="sim">
+          <label class="form-check-label" for="sim">Sim</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="experiencia" id="não">
+          <label class="form-check-label" for="não">Não</label>
+        </div>
+        <label class="form-label" for="descXp">Se sim, descreva:</label>
+        <textarea class="form-textarea" name="descXp" id="descXp" cols="30" rows="8"></textarea>
       </div>
-      <button type="submit">Cadastrar</button>
+      <button class="form-button form-button-primary" type="submit">Cadastrar</button>
     </form>
     <p>Possui cadastro? Faça o <a href="login.html">login</a></p>
   </main>

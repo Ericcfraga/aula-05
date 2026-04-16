@@ -11,13 +11,18 @@
 <body>
   <main>
     <h1>Login</h1>
-    <form>
+    <form class="form-container">
       <div>
-        <label class="block" for="email">Seu Email</label>
-        <input type="email" name="email" id="email" placeholder="Seu email de cadastro">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" name="email" id="email" placeholder="Digite seu email" required>
       </div>
+      <div>
+        <label class="form-label" for="senha">Senha</label>
+        <input class="form-input" type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+      </div>
+      <button class="form-button" type="submit">Entrar</button>
     </form>
-    <p>Não possui cadastro? Faça um <a href="index.html">aqui</a></p>
+    <p>Não possui cadastro? <a href="index.html">Cadastre-se aqui</a></p>
   </main>
 </body>
 
